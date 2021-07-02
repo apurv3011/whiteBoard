@@ -1,0 +1,41 @@
+body , html{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+}
+
+.controls{
+    height: 100px;
+}
+
+.workingArea{
+    height: 70%;
+}
+
+.dash {
+    background-color: #dfe6e9;
+    height: 61%;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 21%;
+    margin-right: 21%;
+    align-items: center;
+    border-radius: 20px;
+}
+.tool{
+    height: 100%;
+    width: 30%;
+    position: relative;
+
+}
+.tool img{
+    height: 100%;
+    width: 100%;
+
+}
+
+#canvas{
+    overflow: hidden;
+}
