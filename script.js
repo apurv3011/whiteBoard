@@ -12,28 +12,60 @@ canvas.width = window.innerWidth;
 
 // console.log(canvas);
 let ctx = canvas.getContext("2d");
+let lineDB = [];
+let line = [];
+let redolineDB = [];
 let isPendown = false;
 canvas.addEventListener("mousedown" , function(e){
 // let {clientX , clientY} = e;
+
+if(redolineDB.length)
+{
+    redolineDB = [];
+}
     let x = e.clientX;
     let y = e.clientY - 122;
     isPendown = true;
     ctx.beginPath();
     ctx.moveTo(x , y);
+
+    let pointObj = {
+        x: x,
+        y : y,
+        type : "md",
+    };
+    console.log("inside mouse down");
+
+    line.push(pointObj);
 });
 
 canvas.addEventListener("mousemove" , function(e){
     // let {clientX , clientY} = e;/
+    
+   if(isPendown){
     let x = e.clientX;
     let y = e.clientY - 122;
-   if(isPendown){
        ctx.lineTo(x , y);
        ctx.stroke();
+   
+   let pointObj = {
+    x: x,
+    y : y,
+    type :"mm",
+};
+// console.log("inside mouse move");
+    line.push(pointObj);
+
    }
+
+
 
 });
 
 canvas.addEventListener("mouseup" , function(e){
     // let {clientX , clientY} = e;
     isPendown = false;
+    lineDB.push(line);
+    line = [];
+    console.log(lineDB);
 });
