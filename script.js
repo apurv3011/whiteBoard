@@ -1,5 +1,4 @@
 let canvas = document.querySelector("#canvas");
-
 // canvas drawing gets erased on window resize ???
 canvas.height = window.innerHeight - 100;
 canvas.width = window.innerWidth;

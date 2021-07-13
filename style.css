@@ -39,3 +39,45 @@ body , html{
 #canvas{
     overflow: hidden;
 }
+.sticky {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    height: 200px;
+    width: 250px;
+}
+
+.stick-header {
+    height: 23px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.stick-header div {
+   height: 80%;
+   width: 8%;
+   margin-right: 5px;
+   align-items: center;
+   margin-top: 1%;
+}
+
+.sticky-content {
+    height: 87%;
+    /* border: 1px solid; */
+    border-bottom-right-radius: 20px;
+    background: lightsteelblue;
+    outline: none;
+    padding: 10px;
+}
+.close {
+    background-color: lightcoral;
+    border-radius: 20px;
+}
+
+
+
+.minimize {
+    background-color: lightcyan;
+    border-radius: 20px;
+}
