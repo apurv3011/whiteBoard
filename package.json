@@ -1,0 +1,36 @@
+{
+  "name": "whiteboard",
+  "version": "1.0.0",
+  "description": "WhiteBoard is an app designed for note taking, organizing, and task management.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "apurv",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^13.0.1"
+  },
+  "environments": {
+    "test": {
+     
+      "buildpacks": [
+        {
+         
+          "url": "https://github.com/heroku/heroku-buildpack-apt"
+        }
+      ]
+    }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apurv3011/whiteBoard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apurv3011/whiteBoard/issues"
+  },
+  "homepage": "https://github.com/apurv3011/whiteBoard#readme"
+}
