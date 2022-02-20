@@ -13,18 +13,16 @@
   "dependencies": {
     "electron": "^13.0.1"
   },
+  "devDependencies": {},
   "environments": {
     "test": {
-     
       "buildpacks": [
         {
-         
           "url": "https://github.com/heroku/heroku-buildpack-apt"
         }
       ]
     }
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apurv3011/whiteBoard.git"
